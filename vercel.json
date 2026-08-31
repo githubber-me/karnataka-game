@@ -1,6 +1,5 @@
 {
   "installCommand": "npm --prefix app ci",
-  "buildCommand": "npm --prefix app run build:vercel",
-  "outputDirectory": "app/.vercel/output",
+  "buildCommand": "npm --prefix app run build:vercel && rm -rf .vercel/output && mkdir -p .vercel && cp -R app/.vercel/output .vercel/output",
   "framework": null
 }
