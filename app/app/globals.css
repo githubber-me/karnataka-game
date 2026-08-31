@@ -18,16 +18,16 @@ button:focus-visible { outline: 4px solid #2b90ff; outline-offset: 3px; }
 
 .game-shell {
   min-height: 100svh;
-  display: grid;
-  place-items: center;
+  width: 100%;
+  display: block;
   overflow: hidden;
   position: relative;
-  background: radial-gradient(circle at 12% 12%, rgba(199,255,68,.16), transparent 25%), radial-gradient(circle at 88% 82%, rgba(255,90,54,.18), transparent 28%), var(--ink);
+  background: var(--paper);
 }
 .ambient { position: fixed; border: 1px solid rgba(255,255,255,.12); border-radius: 50%; pointer-events: none; }
 .ambient-one { width: 380px; height: 380px; left: -220px; top: -80px; }
 .ambient-two { width: 560px; height: 560px; right: -380px; bottom: -280px; }
-.phone-stage { width: min(100%, 460px); min-height: 100svh; position: relative; overflow: hidden; background: var(--paper); isolation: isolate; }
+.phone-stage { width: 100%; min-height: 100svh; position: relative; overflow: hidden; background: var(--paper); isolation: isolate; }
 .phone-stage::before { content: ''; position: absolute; inset: 0; z-index: -1; opacity: .16; pointer-events: none; background-image: radial-gradient(#170d22 0.55px, transparent 0.55px); background-size: 5px 5px; }
 
 .topbar { height: 72px; padding: 13px 16px; display: flex; align-items: center; gap: 10px; position: sticky; top: 0; z-index: 20; border-bottom: 2px solid var(--ink); background: rgba(255,248,232,.94); backdrop-filter: blur(10px); }
