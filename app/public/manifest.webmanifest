@@ -1,0 +1,12 @@
+{
+  "name": "Bengaluru Bluff — The Karnataka Detour",
+  "short_name": "Bengaluru Bluff",
+  "description": "A chaotic Kannada road-trip adventure across Karnataka.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#170d22",
+  "theme_color": "#c62828",
+  "icons": [
+    { "src": "/favicon.png", "sizes": "1254x1254", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
